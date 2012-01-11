@@ -71,7 +71,7 @@ module HTTParty
     #     include HTTParty
     #     http_proxy 'http://foo.com', 80, "user", "passwd"
     #   end
-    def http_proxy(addr=nil, port=nil, user=nil, password=nil)
+    def http_proxy(addr=nil, port = nil, user=nil, password=nil)
       default_options[:http_proxyaddr] = addr
       default_options[:http_proxyport] = port
       default_options[:http_proxyuser] = user
